@@ -1,0 +1,10 @@
+<h1>Add a new restaurant</h1>
+
+
+<%= form_for(@restaurant) do |f| %>
+<%= f.text_field :name , placeholder: "Name" %>
+<%= f.text_field :address, placeholder: "address" %>
+<%= f.text_field :phone_number, placeholder: "phone number" %>
+<%= f.text_field :category, placeholder: "category" %>
+<%= f.submit %>
+<% end %>
